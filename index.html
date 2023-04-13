@@ -7,6 +7,11 @@
             box-sizing: border-box;
             font-family: 'Press Start 2P', cursive;
         }
+
+        .setas {
+            font-size: 20px;
+            color: black;
+        }
     </style>
 </head>
 
@@ -87,6 +92,57 @@
             Tie
         </div>
         <canvas></canvas>
+
+        <div 
+            style="
+                width:600px; 
+                height:auto;  
+                margin-top:20px;
+            ">
+            <p>Comandos</p>
+            
+            <div 
+                style="
+                    display: flex; 
+                    justify-content:center; 
+                    align-items:center ;
+                ">
+                <div 
+                    style=" 
+                        display: flex;
+                        width:300px; 
+                        flex-direction: column;
+                        height:290px;
+                        margin-right:10px;
+                    ">
+                    <p>Player 1</p>
+                    <p>Move Left: <span style="border-radius: 50%; border:1px solid black; padding:5px; display:relative; justify-content:center; align-items:center">A</span> </p>
+                    <p>Move Right:  <span style="border-radius: 50%; border:1px solid black; padding:5px; display:relative; justify-content:center; align-items:center">D</span></p>
+                    <p>Jump:  <span style="border-radius: 50%; border:1px solid black; padding:5px; display:relative; justify-content:center; align-items:center">W</span></p>
+                    <p>Attack: <span style="border-radius: 50%; border:1px solid black; padding:9px; display:relative; justify-content:center; align-items:center">Space</span></p>
+                </div>
+    
+                <div 
+                    style=" 
+                        display: flex;
+                        width:300px; 
+                        flex-direction: column;
+                        max-height:290px;
+                        margin-left:10px;
+                        border: 2px solid blac                    ">
+                    <p>Player 2</p>
+                    <p>Move Left: <span class="setas">⇦</span> </p>
+                    <p>Move Right: <span class="setas">⇨</span> </p>
+                    <p>Jump: <span class="setas">⇧</span> </p>
+                    <p>Attack: <span class="setas">⇩</span> </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
